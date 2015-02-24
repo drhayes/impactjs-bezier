@@ -17,6 +17,23 @@ Then reference from your `requires` like so:
       'game.system.bezier'
     )
     .defines(function() {
+      // ...
+    });
+
+## Usage
+
+There are two functions, `bezierPoint` and `bezierTangent`. Each takes
+five arguments:
+
+  * The value of the start point.
+  * The value of the first control point.
+  * The value of the second control point.
+  * The value of the end point.
+  * The `t` value, between 0 and 1.
+
+The functions will both return a number between the start and end point. To use
+this in a 2d settings simply invoke the function twice, one for the x coordinate
+and another time for the y coordinate.
 
 ## Credit
 
